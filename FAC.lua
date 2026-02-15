@@ -234,6 +234,8 @@ function PrintPoints(Numerator, Multiplier, Constant, CutOff, LCRatio, LowerCons
 		else
 			BestPoints = ThreePoints;
 		end
+	elseif FivePoints>TwoPoints then
+		Bestpoints = FivePoints;
 	else
 		BestPoints = TwoPoints;
 	end
@@ -283,5 +285,6 @@ function InversePoints(DesiredPoints, Num, Mult, Cons, Cut, Ratio, LCons)
 	--return TwoRating, ThreeRating, FiveRating
 
 end
+
 
 Frame:SetScript("OnEvent", FACMain);
